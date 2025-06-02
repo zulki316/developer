@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>elite development</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/home.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <script src="js/main.js" defer></script>
+  <script src="js/animations.js" defer></script>
+</head>
+<body>
+  <div class="cursor"></div>
+  <div class="cursor-follower"></div>
+  
+  <header id="header">
+    <div class="container">
+      <div class="logo">
+        <a href="index.html"><span class="highlight">THe</span>/DEvlopers</a>
+      </div>
+      <nav id="nav">
+        <button class="nav-toggle" aria-label="Toggle navigation">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <ul class="nav-menu">
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="reviews.html">Reviews</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <div class="badge">Available for Freelance Work</div>
+        <h1>
+           <span class="glitch" data-text="Creative">Creative</span>
+  <span class="glitch" data-text="Developer">Developer</span>
+        </h1>
+          <p class="hero-subtitle">Crafting digital experiences that blend <span class="highlight">form</span> and <span class="highlight">function</span> seamlessly</p>
+          <div class="hero-cta">
+            <a href="projects.html" class="btn btn-primary">View Projects</a>
+            <a href="contact.html" class="btn btn-outline">Get in Touch</a>
+          </div>
+          <br>
+        </div>
+        <div class="hero-image">
+          <div class="hero-shape"></div>
+          <img src="https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Developer at work">
+        </div>
+      </div>
+      <div class="scroll-indicator">
+        <span>Scroll Down</span>
+        <div class="mouse">
+          <div class="wheel"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="services-preview">
+      <div class="container">
+        <div class="section-header">
+          <h2>My <span class="highlight">Services</span></h2>
+          <p>Specialized expertise to bring your digital projects to life</p>
+        </div>
+        <div class="services-grid">
+          <div class="service-card">
+            <div class="service-icon">
+              <img src="https://images.pexels.com/photos/326514/pexels-photo-326514.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Web Development">
+            </div>
+            <h3>Web Development</h3>
+            <p>Creating responsive, fast-loading websites with modern technologies</p>
+            <a href="services.html" class="card-link">Learn More</a>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">
+              <img src="https://images.pexels.com/photos/4348401/pexels-photo-4348401.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="App Development">
+            </div>
+            <h3>App Development</h3>
+            <p>Building native and cross-platform mobile applications</p>
+            <a href="services.html" class="card-link">Learn More</a>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">
+              <img src="https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="UI/UX Design">
+            </div>
+            <h3>UI/UX Design</h3>
+            <p>Creating intuitive interfaces and meaningful user experiences</p>
+            <a href="services.html" class="card-link">Learn More</a>
+          </div>
+        </div>
+        <div class="section-cta">
+          <a href="services.html" class="btn btn-outline">View All Services</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="projects-preview">
+      <div class="container">
+        <div class="section-header">
+          <h2>Featured <span class="highlight">Projects</span></h2>
+          <p>A selection of my recent work</p>
+        </div>
+        <div class="projects-grid">
+          <div class="project-card">
+            <div class="project-image">
+              <img src="https://images.pexels.com/photos/326503/pexels-photo-326503.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="E-commerce Website">
+              <div class="project-overlay">
+                <div class="project-category">Web Development</div>
+                <h3>E-commerce Platform</h3>
+                <a href="project-preview.html?id=1" class="btn btn-sm">View Details</a>
+              </div>
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="project-image">
+              <img src="https://images.pexels.com/photos/3775128/pexels-photo-3775128.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Mobile App">
+              <div class="project-overlay">
+                <div class="project-category">App Development</div>
+                <h3>Fitness Tracker App</h3>
+                <a href="project-preview.html?id=2" class="btn btn-sm">View Details</a>
+              </div>
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="project-image">
+              <img src="https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Brand Identity">
+              <div class="project-overlay">
+                <div class="project-category">UI/UX Design</div>
+                <h3>Brand Identity System</h3>
+                <a href="project-preview.html?id=3" class="btn btn-sm">View Details</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="section-cta">
+          <a href="projects.html" class="btn btn-primary">View All Projects</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="testimonials">
+      <div class="container">
+        <div class="section-header">
+          <h2>Client <span class="highlight">Reviews</span></h2>
+          <p>What people are saying about my work</p>
+        </div>
+        <div class="testimonial-slider">
+          <div class="testimonial-slide active">
+            <div class="testimonial-content">
+              <div class="quote">"Working with this developer was a game-changer for our business. The website exceeded our expectations and has significantly increased our online presence."</div>
+              <div class="client">
+                <div class="client-info">
+                  <div class="client-name">Sarah Johnson</div>
+                  <div class="client-position">CEO, TechStart</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-slide">
+            <div class="testimonial-content">
+              <div class="quote">"An exceptional talent who delivered our app on time and within budget. The attention to detail and user experience considerations were outstanding."</div>
+              <div class="client">
+                <div class="client-info">
+                  <div class="client-name">Michael Chen</div>
+                  <div class="client-position">Product Manager, AppLabs</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-slide">
+            <div class="testimonial-content">
+              <div class="quote">"The redesign of our brand identity was brilliant. We've received countless compliments on our new look and feel. Highly recommended!"</div>
+              <div class="client">
+                <div class="client-info">
+                  <div class="client-name">Emily Rodriguez</div>
+                  <div class="client-position">Marketing Director, CreativeHub</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-controls">
+            <button class="prev-testimonial" aria-label="Previous testimonial">
+              <span>&lt;</span>
+            </button>
+            <div class="testimonial-dots">
+              <span class="dot active"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+            </div>
+            <button class="next-testimonial" aria-label="Next testimonial">
+              <span>&gt;</span>
+            </button>
+          </div>
+        </div>
+        <div class="section-cta">
+          <a href="reviews.html" class="btn btn-outline">Read All Reviews</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-section">
+      <div class="container">
+        <div class="cta-content">
+          <h2>Ready to bring your ideas to life<span class="highlight">by MR.ZULKARNAN</span>?</h2>
+          <p>Let's discuss your project and create something amazing together.</p>
+          <a href="contact.html" class="btn btn-primary">Get in Touch</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-col">
+          <div class="footer-logo">
+            <a href="index.html"><span class="highlight">Port</span>folio</a>
+          </div>
+          <p>Crafting digital experiences with precision and creativity.</p>
+          <div class="social-links">
+            <a href="#" aria-label="Github"><i class="icon-github"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="icon-linkedin"></i></a>
+            <a href="#" aria-label="Twitter"><i class="icon-twitter"></i></a>
+            <a href="#" aria-label="Instagram"><i class="icon-instagram"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="reviews.html">Reviews</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3>Contact</h3>
+          <ul class="contact-info">
+            <li><i class="icon-mail"></i>mrzulkarnan78@gmail.com</li>
+            <li><i class="icon-phone"></i>03441184988</li>
+            <li><i class="icon-map"></i>PAKISTAN</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Mr.ZULKARNAN. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

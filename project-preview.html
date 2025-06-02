@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>elite development</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/project-preview.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <script src="js/main.js" defer></script>
+  <script src="js/animations.js" defer></script>
+  <script src="js/project-preview.js" defer></script>
+</head>
+<body>
+  <div class="cursor"></div>
+  <div class="cursor-follower"></div>
+  
+  <header id="header">
+    <div class="container">
+      <div class="logo">
+        <a href="index.html"><span class="highlight">Port</span>folio</a>
+      </div>
+      <nav id="nav">
+        <button class="nav-toggle" aria-label="Toggle navigation">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <ul class="nav-menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="projects.html" class="active">Projects</a></li>
+          <li><a href="reviews.html">Reviews</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="project-header">
+      <div class="container">
+        <div class="project-nav">
+          <a href="projects.html" class="back-link"><span>&larr;</span> Back to Projects</a>
+        </div>
+        <div id="project-title-container">
+          <h1>Project <span class="highlight">Details</span></h1>
+          <p class="project-subtitle">Loading project information...</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="project-showcase">
+      <div class="container">
+        <div class="project-gallery">
+          <div class="main-image">
+            <img id="featured-image" src="https://images.pexels.com/photos/326503/pexels-photo-326503.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Project Image">
+          </div>
+          <div class="thumbnail-gallery" id="thumbnail-gallery">
+            <!-- Thumbnails will be populated by JavaScript -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="project-details">
+      <div class="container">
+        <div class="project-info-grid">
+          <div class="project-description">
+            <h2>Project <span class="highlight">Overview</span></h2>
+            <div id="project-description-content">
+              <p>Loading project description...</p>
+            </div>
+            
+            <h3>Challenge</h3>
+            <div id="project-challenge">
+              <p>Loading challenge information...</p>
+            </div>
+            
+            <h3>Solution</h3>
+            <div id="project-solution">
+              <p>Loading solution information...</p>
+            </div>
+          </div>
+          
+          <div class="project-meta">
+            <div class="meta-card">
+              <h3>Project Details</h3>
+              <ul class="meta-list">
+                <li>
+                  <strong>Client:</strong>
+                  <span id="project-client">Loading...</span>
+                </li>
+                <li>
+                  <strong>Date:</strong>
+                  <span id="project-date">Loading...</span>
+                </li>
+                <li>
+                  <strong>Category:</strong>
+                  <span id="project-category">Loading...</span>
+                </li>
+                <li>
+                  <strong>Technologies:</strong>
+                  <div id="project-technologies" class="tech-tags">
+                    <span class="tech-tag">Loading...</span>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            
+            <div class="meta-card">
+              <h3>Project Links</h3>
+              <ul class="meta-list" id="project-links">
+                <li><a href="#" id="live-link" target="_blank" rel="noopener">View Live Site</a></li>
+                <li><a href="#" id="github-link" target="_blank" rel="noopener">GitHub Repository</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="project-results">
+      <div class="container">
+        <h2>Project <span class="highlight">Results</span></h2>
+        <div class="results-grid" id="project-results">
+          <div class="result-card">
+            <div class="result-icon">
+              <i class="icon-speed"></i>
+            </div>
+            <div class="result-number">95<span>%</span></div>
+            <div class="result-label">Performance</div>
+          </div>
+          
+          <!-- More results will be populated by JavaScript -->
+        </div>
+        
+        <div class="testimonial-card" id="project-testimonial">
+          <div class="quote-mark">"</div>
+          <blockquote id="testimonial-quote">
+            Loading client testimonial...
+          </blockquote>
+          <div class="testimonial-author">
+            <div class="author-info">
+              <div class="author-name" id="testimonial-author">Client Name</div>
+              <div class="author-position" id="testimonial-position">Position, Company</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="related-projects">
+      <div class="container">
+        <h2>Related <span class="highlight">Projects</span></h2>
+        <div class="related-grid" id="related-projects">
+          <!-- Related projects will be populated by JavaScript -->
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-section">
+      <div class="container">
+        <div class="cta-content">
+          <h2>Interested in a similar <span class="highlight">project</span>?</h2>
+          <p>Let's discuss how I can help bring your vision to life.</p>
+          <a href="contact.html" class="btn btn-primary">Get in Touch</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-col">
+          <div class="footer-logo">
+            <a href="index.html"><span class="highlight">Port</span>folio</a>
+          </div>
+          <p>Crafting digital experiences with precision and creativity.</p>
+          <div class="social-links">
+            <a href="#" aria-label="Github"><i class="icon-github"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="icon-linkedin"></i></a>
+            <a href="#" aria-label="Twitter"><i class="icon-twitter"></i></a>
+            <a href="#" aria-label="Instagram"><i class="icon-instagram"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="reviews.html">Reviews</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3>Contact</h3>
+          <ul class="contact-info">
+            <li><i class="icon-mail"></i> hello@portfolio.com</li>
+            <li><i class="icon-phone"></i> +1 (555) 123-4567</li>
+            <li><i class="icon-map"></i> San Francisco, CA</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Portfolio. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

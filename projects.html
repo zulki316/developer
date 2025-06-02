@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>elite development</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/projects.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <script src="js/main.js" defer></script>
+  <script src="js/animations.js" defer></script>
+  <script src="js/projects.js" defer></script>
+</head>
+<body>
+  <div class="cursor"></div>
+  <div class="cursor-follower"></div>
+  
+  <header id="header">
+    <div class="container">
+      <div class="logo">
+        <a href="index.html"><span class="highlight">Port</span>folio</a>
+      </div>
+      <nav id="nav">
+        <button class="nav-toggle" aria-label="Toggle navigation">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <ul class="nav-menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="projects.html" class="active">Projects</a></li>
+          <li><a href="reviews.html">Reviews</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-header">
+      <div class="container">
+        <h1>My <span class="highlight">Projects</span></h1>
+        <p>A showcase of my recent work and achievements</p>
+      </div>
+    </section>
+
+    <section class="projects-filter">
+      <div class="container">
+        <div class="filter-buttons">
+          <button class="filter-btn active" data-filter="all">All Projects</button>
+          <button class="filter-btn" data-filter="web">Web Development</button>
+          <button class="filter-btn" data-filter="app">App Development</button>
+          <button class="filter-btn" data-filter="design">UI/UX Design</button>
+          <button class="filter-btn" data-filter="branding">Branding</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="projects-showcase">
+      <div class="container">
+        <div class="projects-grid">
+          <!-- Web Development Projects -->
+          <div class="project-card" data-category="web">
+            <div class="project-image">
+              <img src="https://images.pexels.com/photos/326503/pexels-photo-326503.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="E-commerce Website">
+              <div class="project-overlay">
+                <div class="project-category">Web Development</div>
+                <h3>E-commerce Platform</h3>
+                <a href="project-preview.html?id=1" class="btn btn-sm">View Details</a>
+              </div>
+            </div>
+          </div>
+          
+          <div class="project-card" data-category="web">
+            <div class="project-image">
+              <img src="https://images.pexels.com/photos/4050315/pexels-photo-4050315.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Corporate Website">
+              <div class="project-overlay">
+                <div class="project-category">Web Development</div>
+                <h3>Corporate Website Redesign</h3>
+                <a href="project-preview.html?id=4" class="btn btn-sm">View Details</a>
+              </div>
+            </div>
+          </div>
+          
+          <div class="project-card" data-category="web">
+            <div class="project-image">
+              <img src="https://images.pexels.com/photos/6634170/pexels-photo-6634170.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Education Platform">
+              <div class="project-overlay">
+                <div class="project-category">Web Development</div>
+                <h3>Online Learning Platform</h3>
+                <a href="project-preview.html?id=7" class="btn btn-sm">View Details</a>
+              </div>
+            </div>
+          </div>
+          
+          <!-- App Development Projects -->
+          <div class="project-card" data-category="app">
+            <div class="project-image">
+              <img src="https://images.pexels.com/photos/3775128/pexels-photo-3775128.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Mobile App">
+              <div class="project-overlay">
+                <div class="project-category">App Development</div>
+                <h3>Fitness Tracker App</h3>
+                <a href="project-preview.html?id=2" class="btn btn-sm">View Details</a>
+              </div>
+            </div>
+          </div>
+          
+          <div class="project-card" data-category="app">
+            <div class="project-image">
+              <img src="https://images.pexels.com/photos/230544/pexels-photo-230544.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Food Delivery App">
+              <div class="project-overlay">
+                <div class="project-category">App Development</div>
+                <h3>Food Delivery App</h3>
+                <a href="project-preview.html?id=5" class="btn btn-sm">View Details</a>
+              </div>
+            </div>
+          </div>
+          
+          <div class="project-card" data-category="app">
+            <div class="project-image">
+              <img src="https://images.pexels.com/photos/1181248/pexels-photo-1181248.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Finance App">
+              <div class="project-overlay">
+                <div class="project-category">App Development</div>
+                <h3>Personal Finance Manager</h3>
+                <a href="project-preview.html?id=8" class="btn btn-sm">View Details</a>
+              </div>
+            </div>
+          </div>
+          
+          <!-- UI/UX Design Projects -->
+          <div class="project-card" data-category="design">
+            <div class="project-image">
+              <img src="https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Brand Identity">
+              <div class="project-overlay">
+                <div class="project-category">UI/UX Design</div>
+                <h3>Brand Identity System</h3>
+                <a href="project-preview.html?id=3" class="btn btn-sm">View Details</a>
+              </div>
+            </div>
+          </div>
+          
+          <div class="project-card" data-category="design">
+            <div class="project-image">
+              <img src="https://images.pexels.com/photos/5082579/pexels-photo-5082579.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Dashboard Design">
+              <div class="project-overlay">
+                <div class="project-category">UI/UX Design</div>
+                <h3>Analytics Dashboard</h3>
+                <a href="project-preview.html?id=6" class="btn btn-sm">View Details</a>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Branding Projects -->
+          <div class="project-card" data-category="branding">
+            <div class="project-image">
+              <img src="https://images.pexels.com/photos/6224/hands-people-woman-working.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Startup Branding">
+              <div class="project-overlay">
+                <div class="project-category">Branding</div>
+                <h3>Tech Startup Rebrand</h3>
+                <a href="project-preview.html?id=9" class="btn btn-sm">View Details</a>
+              </div>
+            </div>
+          </div>
+          
+          <div class="project-card" data-category="branding">
+            <div class="project-image">
+              <img src="https://images.pexels.com/photos/669615/pexels-photo-669615.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Restaurant Branding">
+              <div class="project-overlay">
+                <div class="project-category">Branding</div>
+                <h3>Restaurant Brand Identity</h3>
+                <a href="project-preview.html?id=10" class="btn btn-sm">View Details</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-section">
+      <div class="container">
+        <div class="cta-content">
+          <h2>Have a project in <span class="highlight">mind</span>?</h2>
+          <p>Let's collaborate and create something amazing together.</p>
+          <a href="contact.html" class="btn btn-primary">Get in Touch</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-col">
+          <div class="footer-logo">
+            <a href="index.html"><span class="highlight">Port</span>folio</a>
+          </div>
+          <p>Crafting digital experiences with precision and creativity.</p>
+          <div class="social-links">
+            <a href="#" aria-label="Github"><i class="icon-github"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="icon-linkedin"></i></a>
+            <a href="#" aria-label="Twitter"><i class="icon-twitter"></i></a>
+            <a href="#" aria-label="Instagram"><i class="icon-instagram"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="reviews.html">Reviews</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3>Contact</h3>
+          <ul class="contact-info">
+            <li><i class="icon-mail"></i> hello@portfolio.com</li>
+            <li><i class="icon-phone"></i> +1 (555) 123-4567</li>
+            <li><i class="icon-map"></i> San Francisco, CA</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Portfolio. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

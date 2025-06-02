@@ -1,0 +1,221 @@
+/* Home Page Styles */
+
+/* Hero Section */
+.hero {
+  margin-top: 71px;
+  position: relative;
+  padding: var(--space-32) 0 var(--space-20);
+  overflow: hidden;
+  background-color: var(--color-bg-primary);
+  background-image: radial-gradient(circle at top right, rgba(121, 40, 202, 0.1), transparent 50%),
+                     radial-gradient(circle at bottom left, rgba(0, 112, 243, 0.1), transparent 50%);
+}
+
+.hero .container {
+  position: relative;
+  z-index: var(--z-10);
+}
+
+.hero-content {
+  max-width: 600px;
+}
+
+/* Blinking Title */
+.hero h1 {
+  font-size: var(--font-size-5xl);
+  margin-bottom: var(--space-4);
+  line-height: 1.1;
+}
+
+.glitch {
+  position: relative;
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  animation: glitch-animation 1s infinite;
+}
+
+.glitch::before,
+.glitch::after {
+  content: attr(data-text);
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  color: #fff;
+  background: transparent;
+  overflow: hidden;
+  clip: rect(0, 900px, 0, 0);
+}
+
+.glitch::before {
+  animation: glitch-anim-1 2s infinite linear alternate-reverse;
+  color: #f0f;
+}
+
+.glitch::after {
+  animation: glitch-anim-2 3s infinite linear alternate-reverse;
+  color: #0ff;
+}
+
+@keyframes glitch-animation {
+  0% { transform: none; }
+  20% { transform: skew(-5deg); }
+  40% { transform: skew(5deg); }
+  60% { transform: translateX(5px); }
+  80% { transform: translateX(-5px); }
+  100% { transform: none; }
+}
+
+@keyframes glitch-anim-1 {
+  0% { clip: rect(0, 9999px, 0, 0); }
+  10% { clip: rect(10px, 9999px, 50px, 0); }
+  20% { clip: rect(20px, 9999px, 60px, 0); }
+  30% { clip: rect(30px, 9999px, 40px, 0); }
+  40% { clip: rect(0, 9999px, 20px, 0); }
+  100% { clip: rect(0, 9999px, 0, 0); }
+}
+
+@keyframes glitch-anim-2 {
+  0% { clip: rect(0, 9999px, 0, 0); }
+  10% { clip: rect(15px, 9999px, 55px, 0); }
+  20% { clip: rect(25px, 9999px, 65px, 0); }
+  30% { clip: rect(35px, 9999px, 45px, 0); }
+  40% { clip: rect(10px, 9999px, 30px, 0); }
+  100% { clip: rect(0, 9999px, 0, 0); }
+}
+h1 .glitch {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+
+
+.hero-subtitle {
+  font-size: var(--font-size-xl);
+  color: var(--color-text-secondary);
+  margin-bottom: var(--space-8);
+  line-height: var(--line-height-normal);
+}
+
+.hero-cta {
+  display: flex;
+  gap: var(--space-4);
+  flex-wrap: wrap;
+}
+
+/* Hero Image - Circle Style */
+.hero-image {
+  display: none;
+  position: relative;
+}
+
+.hero-image img {
+  margin-left: 180px;
+  position: relative;
+  z-index: var(--z-10);
+  border-radius: 50%; /* Makes it a circle */
+  object-fit: cover;
+  width: 250px;
+  height: 250px;
+  border: 4px solid #fff; /* White border */
+  box-shadow: 0 0 20px rgba(0,0,0,0.3); /* Soft shadow */
+}
+
+@media (min-width: 768px) {
+  .hero .container {
+    margin-bottom: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-8);
+    align-items: center;
+  }
+
+  .hero-image {
+    display: block;
+  }
+}
+
+@media (min-width: 1024px) {
+  .hero {
+    padding: var(--space-40) 0 var(--space-24);
+  }
+
+  .hero h1 {
+    font-size: var(--font-size-6xl);
+  }
+
+  .hero-subtitle {
+    font-size: var(--font-size-2xl);
+  }
+}
+
+
+
+/* Services Preview Section */
+.services-preview {
+  padding: var(--space-20) 0;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-6);
+}
+
+@media (min-width: 768px) {
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .services-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Projects Preview Section */
+.projects-preview {
+  padding: var(--space-20) 0;
+  background-color: var(--color-bg-secondary);
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-6);
+}
+
+@media (min-width: 768px) {
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .projects-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Testimonials Section */
+.testimonials {
+  padding: var(--space-20) 0;
+}
+
+.testimonial-slider {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* CTA Section - Styling is in global.css */
+
+
+
+
+.badge{
+  margin-top: 30px;
+}

@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>elite development</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/contact.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <script src="js/main.js" defer></script>
+  <script src="js/animations.js" defer></script>
+  <script src="js/contact.js" defer></script>
+</head>
+<body>
+  <div class="cursor"></div>
+  <div class="cursor-follower"></div>
+  
+  <header id="header">
+    <div class="container">
+      <div class="logo">
+        <a href="index.html"><span class="highlight">Port</span>folio</a>
+      </div>
+      <nav id="nav">
+        <button class="nav-toggle" aria-label="Toggle navigation">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <ul class="nav-menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="reviews.html">Reviews</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-header">
+      <div class="container">
+        <h1>Get in <span class="highlight">Touch</span></h1>
+        <p>Let's discuss your project and create something amazing together</p>
+      </div>
+    </section>
+
+    <section class="contact-section">
+      <div class="container">
+        <div class="contact-grid">
+          <div class="contact-info">
+            <div class="info-card">
+              <h2>Contact <span class="highlight">Information</span></h2>
+              <p>Feel free to reach out through any of the following channels. I'm available for freelance work and always interested in new projects.</p>
+              
+              <ul class="contact-list">
+                <li>
+                  <div class="contact-icon">
+                    <i class="icon-mail"></i>
+                  </div>
+                  <div class="contact-details">
+                    <h3>Email</h3>
+                    <p><a href="mailto:hello@portfolio.com">hello@portfolio.com</a></p>
+                  </div>
+                </li>
+                <li>
+                  <div class="contact-icon">
+                    <i class="icon-phone"></i>
+                  </div>
+                  <div class="contact-details">
+                    <h3>Phone</h3>
+                    <p><a href="tel:+15551234567">+1 (555) 123-4567</a></p>
+                  </div>
+                </li>
+                <li>
+                  <div class="contact-icon">
+                    <i class="icon-map"></i>
+                  </div>
+                  <div class="contact-details">
+                    <h3>Location</h3>
+                    <p>San Francisco, CA</p>
+                  </div>
+                </li>
+              </ul>
+              
+              <div class="social-links">
+                <a href="#" aria-label="Github"><i class="icon-github"></i></a>
+                <a href="#" aria-label="LinkedIn"><i class="icon-linkedin"></i></a>
+                <a href="#" aria-label="Twitter"><i class="icon-twitter"></i></a>
+                <a href="#" aria-label="Instagram"><i class="icon-instagram"></i></a>
+              </div>
+              
+              <div class="availability">
+                <h3>Availability</h3>
+                <div class="availability-indicator available">
+                  <span class="status-dot"></span>
+                  <span class="status-text">Available for Freelance Work</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="contact-form-container">
+            <form id="contact-form" class="contact-form">
+              <h2>Send Me a <span class="highlight">Message</span></h2>
+              
+              <div class="form-group">
+                <label for="name">Your Name <span class="required">*</span></label>
+                <input type="text" id="name" name="name" required>
+              </div>
+              
+              <div class="form-group">
+                <label for="email">Your Email <span class="required">*</span></label>
+                <input type="email" id="email" name="email" required>
+              </div>
+              
+              <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone">
+              </div>
+              
+              <div class="form-group">
+                <label for="subject">Subject <span class="required">*</span></label>
+                <input type="text" id="subject" name="subject" required>
+              </div>
+              
+              <div class="form-group">
+                <label for="budget">Budget Range</label>
+                <select id="budget" name="budget">
+                  <option value="" disabled selected>Select your budget range</option>
+                  <option value="less-5k">Less than $5,000</option>
+                  <option value="5k-10k">$5,000 - $10,000</option>
+                  <option value="10k-20k">$10,000 - $20,000</option>
+                  <option value="more-20k">More than $20,000</option>
+                  <option value="not-sure">Not sure yet</option>
+                </select>
+              </div>
+              
+              <div class="form-group">
+                <label for="message">Your Message <span class="required">*</span></label>
+                <textarea id="message" name="message" rows="6" required></textarea>
+              </div>
+              
+              <div class="form-submit">
+                <button type="submit" class="btn btn-primary">Send Message</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="map-section">
+      <div class="container">
+        <h2>My <span class="highlight">Location</span></h2>
+        <div class="map-container">
+          <div class="map-placeholder">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d100939.98555687322!2d-122.50764077068696!3d37.75781499657603!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80859a6d00690021%3A0x4a501367f076adff!2sSan%20Francisco%2C%20CA!5e0!3m2!1sen!2sus!4v1658926235705!5m2!1sen!2sus" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="faq-section">
+      <div class="container">
+        <div class="section-header">
+          <h2>Frequently Asked <span class="highlight">Questions</span></h2>
+          <p>Common questions about working together</p>
+        </div>
+        <div class="accordion">
+          <div class="accordion-item">
+            <button class="accordion-header">
+              <span>What is your typical response time?</span>
+              <span class="accordion-icon">+</span>
+            </button>
+            <div class="accordion-content">
+              <p>I typically respond to inquiries within 24 hours during business days. For urgent matters, please indicate in your subject line, and I'll do my best to respond even more quickly.</p>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <button class="accordion-header">
+              <span>How do we start working together?</span>
+              <span class="accordion-icon">+</span>
+            </button>
+            <div class="accordion-content">
+              <p>The process begins with an initial consultation (via this contact form or direct email) where we discuss your project requirements, goals, and timeline. After that, I'll provide a detailed proposal outlining the scope of work, timeline, and pricing. Once approved, we'll sign a contract and begin the discovery phase.</p>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <button class="accordion-header">
+              <span>Do you work with clients internationally?</span>
+              <span class="accordion-icon">+</span>
+            </button>
+            <div class="accordion-content">
+              <p>Yes! I work with clients globally and have experience collaborating with teams across different time zones. I'm flexible with scheduling meetings to accommodate time differences and use various communication tools to ensure smooth collaboration regardless of location.</p>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <button class="accordion-header">
+              <span>What payment methods do you accept?</span>
+              <span class="accordion-icon">+</span>
+            </button>
+            <div class="accordion-content">
+              <p>I accept payments via bank transfer, PayPal, and major credit cards. For projects, I typically request a 50% deposit to secure the booking, with the remaining balance due upon completion. For larger projects, we can arrange milestone payments based on deliverables.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-col">
+          <div class="footer-logo">
+            <a href="index.html"><span class="highlight">Port</span>folio</a>
+          </div>
+          <p>Crafting digital experiences with precision and creativity.</p>
+          <div class="social-links">
+            <a href="#" aria-label="Github"><i class="icon-github"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="icon-linkedin"></i></a>
+            <a href="#" aria-label="Twitter"><i class="icon-twitter"></i></a>
+            <a href="#" aria-label="Instagram"><i class="icon-instagram"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="reviews.html">Reviews</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3>Contact</h3>
+          <ul class="contact-info">
+            <li><i class="icon-mail"></i> hello@portfolio.com</li>
+            <li><i class="icon-phone"></i> +1 (555) 123-4567</li>
+            <li><i class="icon-map"></i> San Francisco, CA</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Portfolio. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,131 @@
+/* Services Page Styles */
+
+/* Services Grid Section */
+.services-grid-section {
+  padding: var(--space-12) 0 var(--space-20);
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-8);
+}
+
+@media (min-width: 768px) {
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .services-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.service-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.service-features {
+  margin: var(--space-4) 0;
+  padding-left: var(--space-4);
+}
+
+.service-features li {
+  position: relative;
+  padding-left: var(--space-4);
+  margin-bottom: var(--space-2);
+  color: var(--color-text-secondary);
+}
+
+.service-features li::before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  color: var(--color-primary);
+}
+
+.service-card .btn {
+  margin-top: auto;
+}
+
+/* Process Section */
+.process {
+  padding: var(--space-20) 0;
+  background-color: var(--color-bg-secondary);
+}
+
+.process-steps {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.process-step {
+  display: flex;
+  gap: var(--space-6);
+  margin-bottom: var(--space-10);
+  position: relative;
+}
+
+.process-step:last-child {
+  margin-bottom: 0;
+}
+
+.process-step::after {
+  content: '';
+  position: absolute;
+  top: 60px;
+  left: 24px;
+  bottom: -50px;
+  width: 1px;
+  background: linear-gradient(180deg, var(--color-primary) 0%, transparent 100%);
+  z-index: 1;
+}
+
+.process-step:last-child::after {
+  display: none;
+}
+
+.step-number {
+  flex-shrink: 0;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--gradient-primary);
+  border-radius: var(--radius-full);
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-bold);
+  color: white;
+  position: relative;
+  z-index: 2;
+}
+
+.step-content {
+  padding-top: var(--space-2);
+}
+
+.step-content h3 {
+  margin-bottom: var(--space-2);
+  color: var(--color-text-primary);
+}
+
+.step-content p {
+  color: var(--color-text-tertiary);
+}
+
+/* FAQ Section */
+.faq {
+  padding: var(--space-20) 0;
+}
+
+.accordion {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* FAQ accordion styling is in components.css */
